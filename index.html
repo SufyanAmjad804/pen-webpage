@@ -769,4 +769,62 @@
       </ul>
     </div>
   </section>
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">Inkcraft</span>
+        <p>Over a century of writing tradition. Each pen a chapter. Each stroke a legacy.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="#">All Pens</a></li>
+          <li><a href="#">Noir Series</a></li>
+          <li><a href="#">Imperial Series</a></li>
+          <li><a href="#">Bespoke</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Artisans</a></li>
+          <li><a href="#">Atelier</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Warranty</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Inkcraft. All rights reserved.</p>
+      <p>Crafted with ✦ and ink</p>
+    </div>
+  </footer>
+ 
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+ 
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+ 
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+  </script>
+ 
+</body>
 </html>
